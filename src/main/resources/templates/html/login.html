@@ -3,13 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>登录</title>
-    <link href="../css/motiva_sans.css" rel="stylesheet" type="text/css" >
-    <link href="../css/shared_global.css" rel="stylesheet" type="text/css" >
-    <link href="../css/buttons.css" rel="stylesheet" type="text/css" >
-    <link href="../css/store.css" rel="stylesheet" type="text/css" >
-    <link href="../css/cart.css" rel="stylesheet" type="text/css" >
-    <link href="../css/browse.css" rel="stylesheet" type="text/css" >
-    <link href="../css/login.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/motiva_sans.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/shared_global.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/buttons.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/store.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/cart.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/browse.css" rel="stylesheet" type="text/css" >
+    <link href="../../static/css/login.css" rel="stylesheet" type="text/css" >
     <!--<link href="../css/login.css" rel="stylesheet" type="text/css" >-->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,14 +26,14 @@
         ga('send', 'pageview');
 
     </script>
-    <script type="text/javascript" src="../js/jquery-1.8.3.min.js" ></script>
-    <script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="../js/tooltip.js" ></script>
+    <script type="text/javascript" src="../../static/js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript" src="../../static/js/tooltip.js" ></script>
 
-    <script type="text/javascript" src="../js/shared_global.js" ></script>
+    <script type="text/javascript" src="../../static/js/shared_global.js" ></script>
 
-    <script type="text/javascript" src="../js/main.js" ></script>
+    <script type="text/javascript" src="../../static/js/main.js" ></script>
 
-    <script type="text/javascript" src="../js/dynamicstore.js" ></script>
+    <script type="text/javascript" src="../../static/js/dynamicstore.js" ></script>
 
     <script type="text/javascript">
         jQuery(document).ready(function($) { $J.data( document, 'x_readytime', new Date().getTime() );
@@ -41,7 +41,7 @@
             $('.tooltip').v_tooltip();
             window.BindStoreTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'store_tooltip', 'dataName': 'storeTooltip' } ); };
             BindStoreTooltip( $('[data-store-tooltip]') );
-        });</script>	<script type="text/javascript" src="../js/login.js" ></script>
+        });</script>	<script type="text/javascript" src="../../static/js/login.js" ></script>
     <script language="Javascript">
         $J( function() {
             var LoginManger = new CLoginPromptManager( 'https://store.steampowered.com/', {
@@ -61,7 +61,7 @@
         <div class="logo">
 			<span id="logo_holder">
 									<a href="#">
-                                        <img src="../images/globalheader_logo.png" width="176" height="44">
+                                        <img src="../../static/images/globalheader_logo.png" width="176" height="44">
                                     </a>
 							</span>
             <!--[if lt IE 7]>
@@ -189,7 +189,7 @@
                                     <input type="hidden" name="snr" value="1_60_4__12" >
                                     <div class="searchbox">
                                         <input id="store_nav_search_term" name="term" type="text" class="default" placeholder="搜索商店" size="22" autocomplete="off">
-                                        <a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="../images/blank.gif"></a>
+                                        <a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="../../static/images/blank.gif"></a>
                                     </div>
                                 </form>
                             </div>
@@ -292,7 +292,7 @@
                             </div>
                             <div class="login_row" id="captcha_entry" style="display: none;">
                                 <div id="captcha_image_row">
-                                    <img style="float: left;" id="captchaImg" src="../images/blank.gif" border="0" width="206" height="40">
+                                    <img style="float: left;" id="captchaImg" src="../../static/images/blank.gif" border="0" width="206" height="40">
                                     <div id="captchaRefresh">
                                         <span class="linkspan" id="captchaRefreshLink">刷新</span>
                                     </div>
@@ -327,7 +327,7 @@
                             </button>
                         </div>
                         <div id="login_btn_wait" style="display: none;">
-                            <img src="../images/throbber.gif">
+                            <img src="../../static/images/throbber.gif">
                         </div>
                     </div>
                     <div class="loginbox_right">
@@ -362,7 +362,7 @@
                         <li>获取自动游戏更新以及更多！</li>
                     </ul>
                     <br />
-                    <img src="../images/why_join_preview.png" width="265" height="176" border="0" >
+                    <img src="../../static/images/why_join_preview.png" width="265" height="176" border="0" >
                     <br><br>
                 </div>
                 <br>
@@ -786,9 +786,9 @@
         <br>
 
         <div class="rule"></div>
-        <div id="footer_logo_steam"><img src="../images/logo_steam_footer.png" alt="Valve Software" border="0" /></div>
+        <div id="footer_logo_steam"><img src="../../static/images/logo_steam_footer.png" alt="Valve Software" border="0" /></div>
 
-        <div id="footer_logo"><a href="#" target="_blank" rel="noreferrer"><img src="../images/logo_steam_footer.png" alt="Valve Software" border="0" /></a></div>
+        <div id="footer_logo"><a href="#" target="_blank" rel="noreferrer"><img src="../../static/images/logo_steam_footer.png" alt="Valve Software" border="0" /></a></div>
         <div id="footer_text">
             <div>©2018 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</div>
             <div>所有的价格均已包含增值税（如适用）。&nbsp;&nbsp;
@@ -821,8 +821,8 @@
             &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer">工作</a>
             &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer">Steam 分销</a>
             &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer">礼物卡</a>
-            &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer"><img src="../images/ico_facebook.gif"> Steam</a>
-            &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer"><img src="../images/ico_facebook.gif"> @steam_games</a>
+            &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer"><img src="../../static/images/ico_facebook.gif"> Steam</a>
+            &nbsp; | &nbsp;<a href="#" target="_blank" rel="noreferrer"><img src="../../static/images/ico_facebook.gif"> @steam_games</a>
         </div>
 
     </div>

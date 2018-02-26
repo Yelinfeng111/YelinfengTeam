@@ -8,8 +8,17 @@ USE MySteam;
 CREATE TABLE users
 (
 	user_id  INT PRIMARY KEY AUTO_INCREMENT,
-	user_name VARCHAR(50) NOT NULL,
-	user_password VARCHAR(50) NOT NULL
+	user_uuid VARCHAR(255) NOT NULL,/*唯一标识符*/
+	user_accountName VARCHAR(50) NOT NULL,/*用户名*/
+	user_infoName VARCHAR(50) NOT NULL,/*个人资料名*/
+	user_realName VARCHAR(50),/*真实姓名*/
+	user_description LONGTEXT,/*个人简介*/
+	user_password VARCHAR(50),/*密码*/
+	user_photo VARCHAR(255) NOT NULL,/*头像*/
+	user_phone VARCHAR(50),/*手机*/
+	user_level VARCHAR(10) NOT NULL,/*等级*/
+	user_createDate DATETIME NOT NULL, /*创建时间*/
+	user_email VARCHAR(50) /*邮箱*/
 )CHARSET=utf8;
 
 /*创建游戏类型表*/

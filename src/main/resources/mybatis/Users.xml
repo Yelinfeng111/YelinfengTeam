@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.steam.dao.UsersDao">
+    <select id="queryUsers" resultType="Users">
+        select * from users
+        <where>
+            <if test="id != null and id != 0">
+                and user_id = #{id}
+            </if>
+            <if test="accountName != null and accountName != ''">
+                and user_accountName = #{accountName}
+            </if>
+            <if test="password != null and password != ''">
+                and user_password = #{password}
+            </if>
+        </where>
+    </select>
+</mapper>
